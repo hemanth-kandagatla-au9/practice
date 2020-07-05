@@ -1,0 +1,64 @@
+ls
+this command lists all the files that present in the current directory
+
+ls -l
+lists the current directory with more information
+
+pwd
+it directs to present working directory.
+
+touch
+this command creates file
+
+cd <filename>
+it changes directory to <filename>
+ 
+cd ..
+change directory above by one
+
+cd ~home directory
+mkdir : will make a directory for you eg mkdir abc // will create a directory abc
+             1. mkdir -p /a/b/c will make all the directory in the path which is a, b, c  
+rm: removes a file / folder rm <file_name> // will remove a file abc
+             1. rm -r (removes recursively, can be used to delete directory) rm -r <directory_name>
+cp : stands for copy the particular file / folder eg cp <source> <destination>
+             1.cp -r (used to copy folder) cp -r <folder_name_src> <folder_name_destination>
+mv : (move file/folder) mv <source> <destination>
+    cat display a file eg cat filename
+dell@hemanth0319 MINGW64 ~/Desktop
+$ git init
+Initialized empty Git repository in C:/Users/dell/Desktop/.git/
+
+dell@hemanth0319 MINGW64 ~/Desktop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Visual Studio Code.lnk
+        WhatsApp.lnk
+        Zoom.lnk
+        attainu/
+        desktop.ini
+        https---university.attainu.com-dashboard.url
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+dell@hemanth0319 MINGW64 ~/Desktop (master)
+$ git add attainu
+
+dell@hemanth0319 MINGW64 ~/Desktop (master)
+$ git commit -m "message"
+[master (root-commit) 2e39a92] message
+ 1 file changed, 6 insertions(+)
+ create mode 100644 attainu/desktop.ini
+
+dell@hemanth0319 MINGW64 ~/Desktop (master)
+$ git log
+commit 2e39a926583f07c7d3c15f450a2bb8262514c968 (HEAD -> master)
+Author: hemanth-kandagatla-au9 <kandagatlahemanth0319@gmail.com>
+
+
+    message
